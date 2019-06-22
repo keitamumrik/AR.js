@@ -5,15 +5,16 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
         <a-assets>
-            <a-asset-item id="obj" src="assets/model.obj"></a-asset-item>   <!-- objファイル -->
-            <a-asset-item id="mtl" src="assets/materials.mtl"></a-asset-item>   <!-- mtlファイル -->
+            <a-asset-item id="obj" src="assets/gundam/model.obj"></a-asset-item>   <!-- objファイル -->
+            <a-asset-item id="mtl" src="assets/gundam/materials.mtl"></a-asset-item>   <!-- mtlファイル -->
         </a-assets>
       <a-marker preset="hiro">
         <a-obj-model
           src="#obj"
           mtl="#mtl"
-          scale="0.5 0.5 0.5"
-          position="0 0.5 0">
+          scale="1 1 1"
+          position="0 0 -1"
+          rotation="20 180 0">
         </a-obj-model>
       </a-marker>
       <a-entity camera></a-entity>
